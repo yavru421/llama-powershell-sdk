@@ -1,0 +1,38 @@
+# PowerShell SDK
+*.ps1~
+*.psm1~
+*.psd1~
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# OS/Editor
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Secrets
+llamaapi.config.json
+llamaapi.config.psd1
+
+# Test output
+tests/*.log
+tests/*.tmp
+
+# Node/npm (if present)
+node_modules/
+npm-debug.log*
+
+# Python (if present)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
