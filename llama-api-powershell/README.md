@@ -4,20 +4,30 @@ A PowerShell SDK for interacting with the Llama API and agent tools.
 
 ## Installation
 
+### Option 1: Download Release Package
+1. Download `llama-powershell-sdk-v1.0.0.zip` from the [Releases page](https://github.com/yavru421/llama-powershell-sdk/releases)
+2. Extract the ZIP file to your desired location
+3. Open PowerShell and navigate to the extracted folder
+4. Run the installer:
+   ```powershell
+   .\install.ps1
+   ```
+5. Choose 'y' when prompted for global installation (recommended)
+
+### Option 2: Clone Repository
 From the repo root, run:
 
 ```powershell
 ./install.ps1
 ```
 
-Or, import the modules directly:
+### Option 3: Manual Import
+Import the modules directly without installation:
 
 ```powershell
 Import-Module ./src/llama_api_powershell/LlamaApi.psd1
 Import-Module ./src/LlamaAgent/LlamaAgent.psm1
 ```
-
-For global install, follow the prompt in `install.ps1`.
 
 ## Features
 
