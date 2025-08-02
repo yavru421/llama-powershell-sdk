@@ -1,0 +1,19 @@
+# Ignore PowerShell history and sensitive files
+*.ps1~
+*.psm1~
+*.psd1~
+*.zip
+*.bak
+*.tmp
+*.log
+*.user
+*.env
+*.secret
+*.config
+*.DS_Store
+Thumbs.db
+# Ignore API keys and config
+llamaapi.config.json
+llamaapi.config.psd1
+# Ignore test output
+out/
