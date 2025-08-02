@@ -1,3 +1,6 @@
+![image(21)](https://github.com/user-attachments/assets/7572d5a5-b8d4-4150-87b5-677e3bbea3ce)
+
+
 # llama-api-powershell
 
 A PowerShell SDK for interacting with the Llama API and agent tools.
