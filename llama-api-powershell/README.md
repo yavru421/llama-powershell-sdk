@@ -7,12 +7,26 @@ A PowerShell SDK for interacting with the Llama API and agent tools.
 ### Option 1: Download Release Package
 1. Download `llama-powershell-sdk-v1.0.0.zip` from the [Releases page](https://github.com/yavru421/llama-powershell-sdk/releases)
 2. Extract the ZIP file to your desired location
-3. Open PowerShell and navigate to the extracted folder
-4. Run the installer:
-   ```powershell
-   .\install.ps1
-   ```
-5. Choose 'y' when prompted for global installation (recommended)
+3. Navigate to the extracted folder
+
+**Choose one of these installation methods:**
+
+**Method A: Using Batch File (Recommended - bypasses execution policy)**
+```cmd
+install.cmd
+```
+
+**Method B: Using PowerShell with Execution Policy Bypass**
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+**Method C: Standard PowerShell (may require execution policy changes)**
+```powershell
+.\install.ps1
+```
+
+4. Choose 'y' when prompted for global installation (recommended)
 
 ### Option 2: Clone Repository
 From the repo root, run:
@@ -107,10 +121,43 @@ $result = Invoke-LlamaFineTuning -Client $client -Action cancel -Parameters @{ j
 
 ## Troubleshooting
 
+### PowerShell Execution Policy Issues
+If you see an error like "cannot be loaded. The file is not digitally signed", try these solutions:
+
+**Solution 1: Use the batch file installer (Recommended)**
+```cmd
+install.cmd
+```
+
+**Solution 2: Temporarily bypass execution policy**
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+**Solution 3: Change execution policy for current user**
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\install.ps1
+```
+
+**Solution 4: Run specific commands manually**
+```powershell
+# Set execution policy and run
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+.\install.ps1
+```
+
+### Other Common Issues
 - **Missing API Key**: Ensure you have set the `LLAMA_API_KEY` environment variable or passed `-ApiKey` to `New-LlamaClient`.
 - **Module Import Errors**: Double-check the import path and that you are using PowerShell 5.1 or later.
 - **Network Issues**: Verify your internet connection and that the Llama API endpoint is reachable.
 - **Cmdlet Not Found**: Make sure the module is imported in your session.
+
+### Manual Installation (Alternative)
+If automation fails, manually copy the modules:
+1. Copy `src/llama_api_powershell/` to `$env:USERPROFILE\Documents\PowerShell\Modules\LlamaApi\`
+2. Copy `src/LlamaAgent/` to `$env:USERPROFILE\Documents\PowerShell\Modules\LlamaAgent\`
+3. Import: `Import-Module LlamaApi; Import-Module LlamaAgent`
 
 ## Author
 
