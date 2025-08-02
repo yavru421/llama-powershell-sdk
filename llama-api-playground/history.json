@@ -1,0 +1,22 @@
+{
+  "Timestamp": "2025-08-02T08:18:50",
+  "Request": [
+    {
+      "role": "user",
+      "content": "List all available models and their main features."
+    }
+  ],
+  "Response": {
+    "id": "AGCjeYRbESMRJUUEmFym3KS",
+    "completion_message": {
+      "role": "assistant",
+      "stop_reason": "stop",
+      "content": "@{type=text; text=We have a wide range of models, each with its unique strengths and capabilities. Here are some of the models we offer:\n\n1. **LLaMA**: Our flagship model, LLaMA is a large language model that excels at understanding and generating human-like text. Its main features include:\n\t* Large-scale training data\n\t* Ability to understand and respond to complex queries\n\t* Supports multiple languages\n2. **Code LLaMA**: A variant of LLaMA, Code LLaMA is specifically designed for coding and programming tasks. Its main features include:\n\t* Trained on a large corpus of code\n\t* Can generate code snippets in various programming languages\n\t* Supports code completion, debugging, and review\n3. **Math LLaMA**: Another variant of LLaMA, Math LLaMA is designed for mathematical tasks and problem-solving. Its main features include:\n\t* Trained on a large dataset of mathematical problems and solutions\n\t* Can solve mathematical problems, including algebra, calculus, and geometry\n\t* Supports step-by-step reasoning and explanation\n4. **Conversational AI**: Our conversational AI model is designed for generating human-like responses in conversational settings. Its main features include:\n\t* Trained on a large dataset of conversational dialogue\n\t* Can understand and respond to context-dependent queries\n\t* Supports multiple conversational styles and tones\n5. **Summarization Model**: Our summarization model is designed for summarizing long pieces of text into concise, meaningful summaries. Its main features include:\n\t* Can summarize documents, articles, and other text-based content\n\t* Supports multiple summarization techniques, including extractive and abstractive summarization\n\t* Can be fine-tuned for specific summarization tasks\n6. **Translation Model**: Our translation model is designed for translating text from one language to another. Its main features include:\n\t* Supports multiple language pairs\n\t* Can translate text in various formats, including documents, articles, and web pages\n\t* Supports multiple translation techniques, including statistical and neural machine translation\n\nThese are just a few examples of the models we offer. We also have other specialized models for tasks like sentiment analysis, named entity recognition, and text classification. If you have a specific task or application in mind, feel free to ask and we can help you identify the most suitable model.}"
+    },
+    "metrics": [
+      "@{metric=num_completion_tokens; value=483; unit=tokens}",
+      "@{metric=num_prompt_tokens; value=19; unit=tokens}",
+      "@{metric=num_total_tokens; value=502; unit=tokens}"
+    ]
+  }
+}
