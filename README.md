@@ -1,12 +1,16 @@
 ![image(21)](https://github.com/user-attachments/assets/7572d5a5-b8d4-4150-87b5-677e3bbea3ce)
 
-
 # llama-api-powershell
 
 A PowerShell SDK for interacting with the Llama API and agent tools.
 
-## Installation
+---
 
+[![Sponsor Me](https://img.shields.io/badge/Sponsor%20Me-GitHub%20Sponsors-blue)](https://github.com/sponsors/yavru421)
+
+---
+
+## Installation
 
 ### Option 1: Download Release Package
 1. Download `llama-powershell-sdk-v1.0.1.zip` from the [Releases page](https://github.com/yavru421/llama-powershell-sdk/releases)
@@ -23,7 +27,7 @@ This will automatically bypass PowerShell execution policy, run the installer, a
 
 - `install.cmd` (bypasses execution policy)
 - `powershell.exe -ExecutionPolicy Bypass -File .\install.ps1`
-- `.\install.ps1` (may require execution policy changes)
+- `./install.ps1` (may require execution policy changes)
 
 4. Choose 'y' when prompted for global installation (recommended)
 
